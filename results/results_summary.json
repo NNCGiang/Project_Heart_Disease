@@ -1,0 +1,62 @@
+{
+    "MLP c\u01a1 b\u1ea3n": {
+        "accuracy": 0.8532608695652174,
+        "precision": 0.8947368421052632,
+        "recall": 0.8333333333333334,
+        "f1": 0.8629441624365483,
+        "roc_auc": 0.9249163079866093,
+        "model_type": "MLP c\u01a1 b\u1ea3n"
+    },
+    "MLP fine-tune": {
+        "accuracy": 0.6304347826086957,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "roc_auc": 0.9271879483500717,
+        "best_threshold": 0.1,
+        "best_params": {
+            "validation_fraction": 0.1,
+            "solver": "sgd",
+            "n_iter_no_change": 10,
+            "momentum": 0.8,
+            "max_iter": 1500,
+            "learning_rate_init": 0.001291549665014884,
+            "hidden_layer_sizes": [
+                50
+            ],
+            "epsilon": 1e-08,
+            "early_stopping": false,
+            "beta_2": 0.995,
+            "beta_1": 0.95,
+            "batch_size": "auto",
+            "alpha": 0.04832930238571752,
+            "activation": "logistic"
+        },
+        "model_type": "MLP fine-tuned"
+    },
+    "Ensemble": {
+        "accuracy": 0.8913043478260869,
+        "precision": 0.8942307692307693,
+        "recall": 0.9117647058823529,
+        "f1": 0.9029126213592233,
+        "roc_auc": 0.9289813486370158,
+        "ensemble_weights": [
+            0.011396772548093773,
+            0.6500126309824745,
+            0.3385905964694318
+        ],
+        "model_type": "Ensemble"
+    },
+    "Calibrated": {
+        "accuracy": 0.782608695652174,
+        "precision": 0.7279411764705882,
+        "recall": 0.9705882352941176,
+        "f1": 0.8319327731092437,
+        "roc_auc": 0.9302367288378766,
+        "best_threshold": 0.1,
+        "model_type": "Calibrated"
+    },
+    "timestamp": "2026-01-12T15:19:45.618257",
+    "best_model": "Calibrated",
+    "best_threshold": 0.1
+}
